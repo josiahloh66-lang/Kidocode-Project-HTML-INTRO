@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AppleTube - Simple Web Search</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f9f9f9; color: #333; margin: 0; padding: 20px;">
+
+    <!-- Navigation Bar -->
+    <div style="background-color: #ffffff; padding: 15px 20px; border-bottom: 1px solid #ddd; margin-bottom: 20px;">
+        <strong>|| AppleTube</strong>
+        <span style="float: right;">
+            <a href="#home" style="margin-left: 15px; text-decoration: none; color: #0066cc;">Home</a>
+            <a href="#about" style="margin-left: 15px; text-decoration: none; color: #0066cc;">About</a>
+            <a href="#contact" style="margin-left: 15px; text-decoration: none; color: #0066cc;">Contact</a>
+        </span>
+    </div>
+
+    <!-- Home Section / Search -->
+    <div id="home" style="text-align: center; padding: 40px 0;">
+        <h1>Search Any Song</h1>
+        <form action="https://www.youtube.com/results" method="GET">
+            <p>
+                <input type="text" name="search_query" placeholder="Type a song..." style="padding: 10px; width: 300px; border: 1px solid #ccc; border-radius: 4px;" required>
+            </p>
+            <p>
+                <input type="submit" value="Search on YouTube" style="padding: 8px 15px; cursor: pointer;">
+            </p>
+        </form>
+    </div>
+
+    <hr style="border: 0; border-top: 1px solid #ddd; margin: 30px 0;">
+
+    <!-- About Section / Table -->
+    <div id="about" style="text-align: center;">
+        <h2>Most Famous Platforms</h2>
+        <table border="1" align="center" cellpadding="10" cellspacing="0" style="border-collapse: collapse; background-color: #fff;">
+            <tr style="background-color: #eee;">
+                <th>Platform</th>
+                <th>Details</th>
+            </tr>
+            <tr>
+                <td><strong>YouTube</strong></td>
+                <td>Great for long-form videos, music, and tutorials.</td>
+            </tr>
+            <tr>
+                <td><strong>Google</strong></td>
+                <td>Used for searching articles, news, and the web.</td>
+            </tr>
+        </table>
+    </div>
+
+    <hr style="border: 0; border-top: 1px solid #ddd; margin: 30px 0;">
+
+    <!-- Contact Section -->
+    <div id="contact" style="text-align: center; padding-bottom: 40px;">
+        <h2>Contact Us</h2>
+        <form action="#" method="POST">
+            <p><input type="text" placeholder="Your Name" style="padding: 8px; width: 250px;" required></p>
+            <p><input type="email" placeholder="Your Email" style="padding: 8px; width: 250px;" required></p>
+            <p><textarea placeholder="Type your message..." rows="4" style="padding: 8px; width: 250px;" required></textarea></p>
+            <p><button type="submit" style="padding: 8px 20px; cursor: pointer;">Send Message</button></p>
+        </form>
+    </div>
+
+</body>
+</html>
